@@ -38,16 +38,22 @@ sass --watch app/sass/partials:public/stylesheets
 `git branch -a`  
 **check detailed information of commits**  
 `git branch -vv` or `git branch -vva`  
-**switch branch**  
-`bit checkout <branch-name>`
+**switch to existing branch**  
+`git checkout <branch-name>` or `git switch <branch-name>`
 **check status**  
 `git status`  
 **commit and add message to the progress**  
 `git commit -m "commit message"`  
 **create and navigate to new branch**  
-`git checkout -b main`  
-**push from origin to main**  
-`git push -u origin main`  
+`git checkout -b <new-branch>`  or `git switch -c <new-branch>`
+**push from origin to another branch**  
+`git push -u origin <branch>`  
 **undo a commit**  
 `git reset HEAD~`
 
+
+
+
+Resources:
+* https://devconnected.com/how-to-switch-branch-on-git/
+* https://cli.github.com/manual/gh

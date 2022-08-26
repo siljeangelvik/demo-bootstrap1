@@ -1,6 +1,10 @@
 #Course Assignment - CSS Frameworks
-##Goal
 
+[GitHub Repo
+](https://github.com/siljeangelvik/demo-bootstrap1/blob/origin/notes.md)
+[Netlify](https://frameworks-ca.netlify.app/)
+
+##Goal
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
 ##Brief
