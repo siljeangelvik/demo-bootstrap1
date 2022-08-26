@@ -4,6 +4,12 @@
 ](https://github.com/siljeangelvik/demo-bootstrap1/blob/origin/notes.md)
 [Netlify](https://frameworks-ca.netlify.app/)
 
+###Netlify Settings
+**Production branch:** main  
+**Branch deploys:** Deploy only the production branch
+
+---
+
 ##Goal
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
