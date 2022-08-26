@@ -47,7 +47,6 @@ sass --watch app/sass/partials:public/stylesheets
 `git checkout -b main`  
 **push from origin to main**  
 `git push -u origin main`  
+**undo a commit**  
+`git reset HEAD~`
 
-
-
-% git commit -m "changed content of the .md files"
