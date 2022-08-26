@@ -29,6 +29,7 @@ sass --watch app/sass/partials:public/stylesheets
 
 
 --
+###Cheat Sheet
 **check local branch names**  
 `git branch`  
 **check remote branch names**  
