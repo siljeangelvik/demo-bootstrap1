@@ -4,7 +4,7 @@
 ](https://github.com/siljeangelvik/demo-bootstrap1/blob/origin/notes.md)
 [Netlify](https://frameworks-ca.netlify.app/)
 
-###Netlify Settings
+###Netlify Settings  
 **Production branch:** main  
 **Branch deploys:** Deploy only the production branch
 
