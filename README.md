@@ -26,12 +26,12 @@ You are required to seek feedback from your peers as well as the teachers in ord
 * ~~Create a design or wireframe for each page~~  
 * ~~Create a new repository on GitHub~~  
 * ~~Create a new project folder for this repository~~
-* Create a new git branch for this project  
+* ~~Create a new git branch for this project~~  
 * ~~Create a package.json file~~  
 * ~~Install Bootstrap, SASS and Live Server~~  
-* Configure NPM scripts in package.json  
+* ~~Configure NPM scripts in package.json~~  
 * ~~Implement your design using Bootstrap and SASS overrides~~  
-* Create a Pull Request to merge your changes to the main branch  
+* Create a Pull Request to merge your changes to the `main` branch  
 * Share this Pull Request and request peer review  
 * Discuss and implement the feedback gathered from peer review  
 * Share this Pull Request with a teacher for their approval  
