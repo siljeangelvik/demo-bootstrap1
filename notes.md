@@ -7,6 +7,15 @@
 --style=compressed  
 --watch
 
+**run command:** sass --watch  
+_example:_   
+sass --watch app/sass/partials:public/stylesheets
+sass --watch input.scss output.css
+sass --watch app/sass:public/stylesheets
+sass --watch scss/custom.scss:css/style.css
+sass --style=compressed scss/custom.scss:css/style.css
+---
+
 ## Directory Structure:
 
 ###app
@@ -24,11 +33,6 @@ _mixins.scss
 **public**  
 **/ stylesheets**  
 output.css
-
----
-**run command:** sass --watch  
-_example:_   
-sass --watch app/sass/partials:public/stylesheets
 
 
 --
