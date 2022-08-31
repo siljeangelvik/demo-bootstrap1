@@ -14,6 +14,8 @@ sass --watch input.scss output.css
 sass --watch app/sass:public/stylesheets
 sass --watch scss/custom.scss:css/style.css
 sass --style=compressed scss/custom.scss:css/style.css
+sass --watch scss/custom.scss:css/style.css
+
 ---
 
 ## Directory Structure:
