@@ -1,104 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Customize Bootstrap with Sass</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 <div class="container">
     <div class="row">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Bootstrap Media</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Bootstrap Media</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="feed.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profile.html">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="index.html">Login</a>
                         </li>
-
-
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search in Bootstrap Media" aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
 
-
+        <div class="container">
             <div class="row">
-                <div class="form-row mt-4 p-0">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Post</button>
-                    </form>
-                </div>
 
-            </div>
-
-
-            <div class="row mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="rounded float-left pb-1" src="media/profile-placeholder.png" alt="Profile image">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Some description of what John Doe did this weekend.</p>
-                        <a href="login.html" class="btn btn-primary">John Doe's profile page</a>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="rounded float-left pb-1" src="media/profile-placeholder.png" alt="Profile image">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Some description of what John Doe did this weekend.</p>
-                        <a href="login.html" class="btn btn-primary">John Doe's profile page</a>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                </div>
-            </div>
+                    <a href="feed.html" class="btn btn-primary mt-3">Login</a>
+                </form>
 
-            <div class="row mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="rounded float-left pb-1" src="media/profile-placeholder.png" alt="Profile image">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Some description of what John Doe did this weekend.</p>
-                        <a href="login.html" class="btn btn-primary">John Doe's profile page</a>
-                    </div>
-                </div>
             </div>
-
-            <div class="row mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="rounded float-left pb-1" src="media/profile-placeholder.png" alt="Profile image">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Some description of what John Doe did this weekend.</p>
-                        <a href="login.html" class="btn btn-primary">John Doe's profile page</a>
-                    </div>
-                </div>
-            </div>
-
+        </div>
 
     </div>
+
 </div>
 
 <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js.flow"></script>
