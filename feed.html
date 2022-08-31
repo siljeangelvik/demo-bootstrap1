@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Bootstrap Media!</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js.flow"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -47,10 +49,10 @@
 
     <!-- post on feed: start -->
     <div class="container pt-4 pb-3 px-0 m-0">
-            <form class="d-flex flex-row">
-                <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
-                <button class="btn btn-primary text-white" type="submit">Post</button>
-            </form>
+        <form class="d-flex flex-row">
+            <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
+            <button class="btn btn-primary text-white" type="submit">Post</button>
+        </form>
     </div>
     <!-- post on feed: stop -->
 
@@ -70,50 +72,49 @@
                 </div>
             </div>
 
-                    <!-- card: menu and close -->
-                    <div class="d-flex flex-row justify-content-end">
-                        <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
-                        <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
-                    </div>
-                </div>
-
-                <!-- card: post content -->
-                <div class="d-flex flex-column">
-                    <p class="mt-4 card-text">Some description of what John Doe did this weekend.</p>
-                    <img class="rounded float-md-start d-block" src="media/feed-beach.jpg" alt="placeholder">
-                    <!--  <a href="index.html" class="btn btn-primary my-2">John Doe's profile page</a> -->
-                </div>
-
-                <!-- card: number of likes and views -->
-                <div class="d-flex flex-row justify-content-between mt-3">
-                    <div class="flex-row text-center">
-                        <!-- haven't found out how to properly center the icon yet -->
-                        <span class="bg-primary rounded-circle p-1"><i class="bi bi-hand-thumbs-up-fill text-white"></i></span>
-                        <span class="fw-lighter p-1">7</span>
-                    </div>
-                    <div class="flex-column align-items-center text-center">
-                        <p class="fw-lighter">3 views</p>
-                    </div>
-                </div>
-
-                <!-- card: like, comment or share -->
-                <div class="d-flex flex-row justify-content-around border-top">
-                    <button class="btn flex-column border-0">
-                        <i class="bi bi-hand-thumbs-up"></i>
-                        <span class="fw-bold px-1">Like</span>
-                    </button>
-                    <button class="btn flex-column border-0">
-                        <i class="bi bi-chat-square"></i>
-                        <span class="fw-bold px-1">Comment</span>
-                    </button>
-                    <button class="btn flex-column border-0">
-                        <i class="bi bi-share"></i>
-                        <span class="fw-bold px-1">Share</span>
-                    </button>
-                </div>
+            <!-- card: menu and close -->
+            <div class="d-flex flex-row justify-content-end">
+                <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
+                <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
             </div>
-    <!-- card: finished -->
+        </div>
 
+        <!-- card: post content -->
+        <div class="d-flex flex-column">
+            <p class="mt-4 card-text">Some description of what John Doe did this weekend.</p>
+            <img class="rounded float-md-start d-block" src="media/feed-beach.jpg" alt="placeholder">
+            <!--  <a href="index.html" class="btn btn-primary my-2">John Doe's profile page</a> -->
+        </div>
+
+        <!-- card: number of likes and views -->
+        <div class="d-flex flex-row justify-content-between mt-3">
+            <div class="flex-row text-center">
+                <!-- haven't found out how to properly center the icon yet -->
+                <span class="bg-primary rounded-circle p-1"><i class="bi bi-hand-thumbs-up-fill text-white"></i></span>
+                <span class="fw-lighter p-1">7</span>
+            </div>
+            <div class="flex-column align-items-center text-center">
+                <p class="fw-lighter">3 views</p>
+            </div>
+        </div>
+
+        <!-- card: like, comment or share -->
+        <div class="d-flex flex-row justify-content-around border-top">
+            <button class="btn flex-column border-0">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <span class="fw-bold px-1">Like</span>
+            </button>
+            <button class="btn flex-column border-0">
+                <i class="bi bi-chat-square"></i>
+                <span class="fw-bold px-1">Comment</span>
+            </button>
+            <button class="btn flex-column border-0">
+                <i class="bi bi-share"></i>
+                <span class="fw-bold px-1">Share</span>
+            </button>
+        </div>
+    </div>
+    <!-- card: finished -->
 
 
     <!-- card: start -->
@@ -175,11 +176,7 @@
     </div>
     <!-- card: finished -->
 
-
 </div>
-
-<script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js.flow"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
