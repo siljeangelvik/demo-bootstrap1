@@ -4,90 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome! Customize Bootstrap with Sass</title>
+    <title>John Doe's profile</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome! Customize Bootstrap with Sass</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
 
 <div class="container">
-    <din class="row">
+    <div class="row">
+        <!-- navbar: start -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="feed.html">Bootstrap Media</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active-link" aria-current="page" href="feed.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="profile.html">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Login</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="feed.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
                     </ul>
+                    <form class="d-flex py-3">
+                        <input class="form-control me-2" type="search" placeholder="Search in Bootstrap Media"
+                               aria-label="Search">
+                        <button class="btn btn-primary text-white" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
-    </din>
+    </div>
+    <!-- navbar: stop -->
 
 
     <div class="container mb-2">
+        <!-- profile: start -->
         <div class="card p-4">
-            <div class="flex-row">
-                <div class="row">
-                    <button class="btn btn-primary">
-                        <img src="media/profile-placeholder.png"/>
-                        <div class="row">
-                            <span class="username mt-3">John Doe</span>
-                        </div>
-                        <div class="row mt-3">
-                            <span class="idd">@johndoe</span>
-                        </div>
-
-                        <div class="col mt-3">
-                            <span class="usernumber">1069 <span class="follow">Followers</span></span>
-                        </div>
-                        <div class="col text mt-3">
-                            <span>John Doe is a creator of minimalistic x bold graphics and digital artwork.</span>
-                        </div>
-                    </button>
-
+            <!-- user details -->
+            <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-column justify-content-center text-center">
+                    <img class="mx-auto d-block thumbnail" src="media/profile-placeholder.png" alt="placeholder"/>
+                    <p class="fw-bold mt-3">John Doe</p>
+                    <p class="fst-italic">@johndoe</p>
+                    <p class="fw-bold">1069 <span class="follow">Followers</span></p>
+                    <p>John Doe is a creator of minimalistic x bold graphics and digital artwork.</p>
                 </div>
             </div>
-
             <div class="row mt-4 mb-2">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item userinformation">Information</li>
-                    <li class="list-group-item userinformation border-0">Birthday</li>
+                    <li class="list-group-item fw-bold">Information</li>
+                    <li class="list-group-item fw-bold border-0">Birthday</li>
                     <li class="list-group-item border-0">01.02.1993</li>
-                    <li class="list-group-item userinformation border-0">Current City</li>
+                    <li class="list-group-item fw-bold border-0">Current City</li>
                     <li class="list-group-item border-0">Copenhagen, Denmark</li>
-                    <li class="list-group-item userinformation border-0">Education</li>
+                    <li class="list-group-item fw-bold border-0">Education</li>
                     <li class="list-group-item border-bottom">Far Away Institute</li>
                 </ul>
             </div>
 
-            <div class="row mt-4 mb-2">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item userinformation">Say hello to John Doe!</li>
-                </ul>
+            <!-- post message on user profile -->
+            <div class="row mt-5">
+                <p class="fw-bold">Say hello to John Doe!</p>
+
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Post a message"
                            aria-label="greeting">
@@ -96,43 +76,35 @@
             </div>
 
 
-            <div class="row mt-4">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item userinformation border-bottom">Friends</li>
-                </ul>
+            <!-- friends section -->
+            <div class="row mt-5">
+                <p class="fw-bold border-bottom">Friends</p>
+
                 <ul class="list-group list-group-flush flex-row flex-wrap">
-                    <li class="list-group-item border-0">
-                        <a href="#">
-                            <img src="media/profile-placeholder.png"/>
-                        </a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="#">
-                            <img src="media/profile-placeholder.png"/>
-                        </a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="#">
-                            <img src="media/profile-placeholder.png"/>
-                        </a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="#">
-                            <img src="media/profile-placeholder.png"/>
-                        </a>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="#">
-                            <img src="media/profile-placeholder.png"/>
-                        </a>
-                    </li>
+                    <li class="list-group-item border-0"><a href="#"><img class="rounded-circle thumbnail"
+                                                                          src="media/profile-placeholder.png"
+                                                                          alt="placeholder"/></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="rounded-circle thumbnail"
+                                                                          src="media/profile-placeholder.png"
+                                                                          alt="placeholder"/></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="rounded-circle thumbnail"
+                                                                          src="media/profile-placeholder.png"
+                                                                          alt="placeholder"/></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="rounded-circle thumbnail"
+                                                                          src="media/profile-placeholder.png"
+                                                                          alt="placeholder"/></a></li>
+                    <li class="list-group-item border-0"><a href="#"><img class="rounded-circle thumbnail"
+                                                                          src="media/profile-placeholder.png"
+                                                                          alt="placeholder"/></a></li>
                 </ul>
             </div>
+            <!-- friends: stop -->
 
 
+            <!-- profile: latest posts -->
             <div class="row mt-4">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item userinformation border-bottom">Latest posts</li>
+                    <li class="list-group-item font-weight-bold border-bottom">Latest posts</li>
                 </ul>
                 <ul class="list-group list-group-flush flex-row flex-wrap">
                     <li class="list-group-item border-0">
@@ -152,19 +124,17 @@
                     </li>
                 </ul>
             </div>
-
 
         </div>
+
     </div>
-</div>
-
 
 </div>
+</div>
+
 
 <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js.flow"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-</body>
-</html>
 </body>
 </html>
