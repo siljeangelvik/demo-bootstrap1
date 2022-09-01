@@ -20,7 +20,11 @@
 
 
 ---
+##Notes:
+* Images is not optimized
+* 
 
+---
 ####Resources:  
 * https://devconnected.com/how-to-switch-branch-on-git/
 * https://cli.github.com/manual/gh
