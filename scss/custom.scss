@@ -8,8 +8,8 @@
 
 // $body-bg: #9990BA;
 // $body-color: #2B2B2B;
-$primary: #9990BA;
-$secondary: #7F4599;
+$primary: #7F4599;
+$secondary: #9990BA;
 $primary-color: #FFF;
 //$success: lightgreen;
 
@@ -47,4 +47,5 @@ button.btn-primary:hover { background-color: #9990BA; border-color: #7F4599; }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.input-thumbnail { max-width: 2.6rem; }
 .thumbnail { max-width: 4.7rem; }

@@ -44,14 +44,52 @@
         </nav>
         <!-- navbar: stop -->
 
-        <!-- INPUT: post on feed -->
-        <div class="container pt-4 pb-3 px-0 m-0">
-            <form class="d-flex flex-row">
-                <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
-                <button class="btn btn-primary text-white" type="submit">Post</button>
-            </form>
+        <!-- CONTAINER: password and post on feed -->
+        <div class="container pt-4 pb-3 ">
+            <div class="row ">
+
+                <!-- post on feed -->
+                <div class="d-flex flex-column justify-content-between col-sm-12 col-lg-6 p-3">
+                    <h3 class="">Tell your friends about your day</h3>
+                    <form class="d-flex flex-row align-items-center">
+                        <img class="rounded-circle input-thumbnail me-2" src="media/profile-placeholder.png"
+                             alt="Profile image">
+                        <input class=" form-control me-2" type="search" placeholder="What's on your mind?"
+                               aria-label="Search">
+                        <button class=" btn btn-primary text-white" type="submit">Post</button>
+                    </form>
+                    <div class="d-flex flex-row justify-content-around border-top mt-3">
+                        <button class="btn flex-column border-0">
+                            <i class="bi bi-camera-video"></i>
+                            <span class="px-1">Live video</span>
+                        </button>
+                        <button class="btn flex-column border-0">
+                            <i class="bi bi-card-image"></i>
+                            <span class="px-1">Image/video</span>
+                        </button>
+                        <button class="btn flex-column border-0">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span class="px-1">Emotion/activity</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- password (hidden on mobile) -->
+                <div class="col-sm-12 col-lg-6 d-none d-lg-block border rounded border-1 p-3">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h3><i class="bi bi-bootstrap-fill"></i> Remember password</h3>
+                        <p>The next time you log into this browser, just click on your profile picture instead of entering
+                            your password.</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-2">
+                        <button class="col-6 btn btn-primary text-white">OK</button>
+                        <button class="col-6 btn btn-secondary text-white">Not now</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <!-- post-feed: stop -->
+        <!-- END: password and post on feed -->
 
         <!-- CARD FEED: start -->
         <div class="card card-body mt-3">
@@ -64,7 +102,7 @@
                              alt="Profile image">
                     </button>
                     <div class="col flex-column align-items-center px-2">
-                        <h5 class="card-title">John Doe</h5>
+                        <h5 class="card-title">Jack Doe</h5>
                         <p class="fw-lighter m-0">2h</p>
                     </div>
                 </div>
@@ -79,7 +117,7 @@
 
             <!-- card image and description -->
             <div class="d-flex flex-column">
-                <p class="mt-4 card-text">Some description of what John Doe did this weekend.</p>
+                <p class="mt-4 card-text">Some description of what Jack Doe did this weekend.</p>
                 <img class="rounded float-md-start d-block ratio ratio-16x9" src="media/feed-beach.jpg"
                      alt="placeholder">
             </div>
