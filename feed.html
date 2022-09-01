@@ -19,7 +19,9 @@
         <!-- navbar: start -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="feed.html">Bootstrap Media</a>
+                <a class="navbar-brand" href="feed.html">
+                    <h1><i class="bi bi-bootstrap-fill"></i></h1>
+                </a>
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -27,15 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="feed.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="profile.html">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Login</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="feed.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                                href="profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
                     </ul>
                     <form class="d-flex py-3">
                         <input class="form-control me-2" type="search" placeholder="Search in Bootstrap Media"
@@ -45,140 +42,146 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <!-- navbar: stop -->
+        <!-- navbar: stop -->
 
 
-    <!-- post on feed: start -->
-    <div class="container pt-4 pb-3 px-0 m-0">
-        <form class="d-flex flex-row">
-            <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
-            <button class="btn btn-primary text-white" type="submit">Post</button>
-        </form>
-    </div>
-    <!-- post on feed: stop -->
+        <!-- post on feed: start -->
+        <div class="container pt-4 pb-3 px-0 m-0">
+            <form class="d-flex flex-row">
+                <input class="form-control me-2" type="search" placeholder="What's on your mind?" aria-label="Search">
+                <button class="btn btn-primary text-white" type="submit">Post</button>
+            </form>
+        </div>
+        <!-- post on feed: stop -->
 
 
-    <!-- card: start -->
-    <div class="card card-body mt-3">
-        <div class="d-flex flex-row justify-content-between">
-            <!-- card: user placeholder img, name and time of posted -->
-            <div class="d-flex flex-row align-items-center">
-                <button class="btn border-0 p-0">
-                    <img class="rounded-circle thumbnail" src="media/profile-placeholder.png"
-                         alt="Profile image">
-                </button>
-                <div class="col flex-column align-items-center px-2">
-                    <h5 class="card-title">John Doe</h5>
-                    <p class="fw-lighter m-0">2h</p>
+        <!-- card: start -->
+        <div class="card card-body mt-3">
+            <div class="d-flex flex-row justify-content-between">
+                <!-- card: user placeholder img, name and time of posted -->
+                <div class="d-flex flex-row align-items-center">
+                    <button class="btn border-0 p-0">
+                        <img class="rounded-circle thumbnail" src="media/profile-placeholder.png"
+                             alt="Profile image">
+                    </button>
+                    <div class="col flex-column align-items-center px-2">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="fw-lighter m-0">2h</p>
+                    </div>
+                </div>
+
+                <!-- card: menu and close -->
+                <div class="d-flex flex-row justify-content-end">
+                    <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
+                    <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
                 </div>
             </div>
 
-            <!-- card: menu and close -->
-            <div class="d-flex flex-row justify-content-end">
-                <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
-                <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
+            <!-- card: post content -->
+            <div class="d-flex flex-column">
+                <p class="mt-4 card-text">Some description of what John Doe did this weekend.</p>
+                <img class="rounded float-md-start d-block" src="media/feed-beach.jpg" alt="placeholder">
+                <!--  <a href="index.html" class="btn btn-primary my-2">John Doe's profile page</a> -->
             </div>
-        </div>
 
-        <!-- card: post content -->
-        <div class="d-flex flex-column">
-            <p class="mt-4 card-text">Some description of what John Doe did this weekend.</p>
-            <img class="rounded float-md-start d-block" src="media/feed-beach.jpg" alt="placeholder">
-            <!--  <a href="index.html" class="btn btn-primary my-2">John Doe's profile page</a> -->
-        </div>
-
-        <!-- card: number of likes and views -->
-        <div class="d-flex flex-row justify-content-between mt-3">
-            <div class="flex-row text-center">
-                <!-- haven't found out how to properly center the icon yet -->
-                <span class="bg-primary rounded-circle p-1"><i class="bi bi-hand-thumbs-up-fill text-white"></i></span>
-                <span class="fw-lighter p-1">7</span>
-            </div>
-            <div class="flex-column align-items-center text-center">
-                <p class="fw-lighter">3 views</p>
-            </div>
-        </div>
-
-        <!-- card: like, comment or share -->
-        <div class="d-flex flex-row justify-content-around border-top">
-            <button class="btn flex-column border-0">
-                <i class="bi bi-hand-thumbs-up"></i>
-                <span class="fw-bold px-1">Like</span>
-            </button>
-            <button class="btn flex-column border-0">
-                <i class="bi bi-chat-square"></i>
-                <span class="fw-bold px-1">Comment</span>
-            </button>
-            <button class="btn flex-column border-0">
-                <i class="bi bi-share"></i>
-                <span class="fw-bold px-1">Share</span>
-            </button>
-        </div>
-    </div>
-    <!-- card: finished -->
-
-
-    <!-- card: start -->
-    <div class="card card-body mt-3">
-        <div class="d-flex flex-row justify-content-between">
-            <!-- card: user placeholder img, name and time of posted -->
-            <div class="d-flex flex-row align-items-center">
-                <button class="btn border-0 p-0">
-                    <img class="rounded-circle thumbnail" src="media/profile-placeholder.png"
-                         alt="Profile image">
-                </button>
-                <div class="col flex-column align-items-center px-2">
-                    <h5 class="card-title">Jane Doe</h5>
-                    <p class="fw-lighter m-0">5h</p>
+            <!-- card: number of likes and views -->
+            <div class="d-flex flex-row justify-content-between mt-3">
+                <div class="flex-row text-center">
+                    <!-- haven't found out how to properly center the icon yet -->
+                    <span class="bg-primary rounded-circle p-1"><i
+                            class="bi bi-hand-thumbs-up-fill text-white"></i></span>
+                    <span class="fw-lighter p-1">7</span>
+                </div>
+                <div class="flex-column align-items-center text-center">
+                    <p class="fw-lighter">3 views</p>
                 </div>
             </div>
 
-            <!-- card: menu and close -->
-            <div class="d-flex flex-row justify-content-end">
-                <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
-                <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
+            <!-- card: like, comment or share -->
+            <div class="d-flex flex-row justify-content-around border-top">
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span class="fw-bold px-1">Like</span>
+                </button>
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-chat-square"></i>
+                    <span class="fw-bold px-1">Comment</span>
+                </button>
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-share"></i>
+                    <span class="fw-bold px-1">Share</span>
+                </button>
             </div>
         </div>
+        <!-- card: finished -->
 
-        <!-- card: post content -->
-        <div class="d-flex flex-column">
-            <p class="mt-3 card-text">Some description of what Jane Doe ate this weekend.</p>
-            <img class="rounded float-md-start" src="media/feed-food.jpg" alt="placeholder">
-            <!--  <a href="index.html" class="btn btn-primary my-2">Jane Doe's profile page</a> -->
-        </div>
 
-        <!-- card: number of likes and views -->
-        <div class="d-flex flex-row justify-content-between mt-3">
-            <div class="flex-row text-center">
-                <!-- haven't found out how to properly center the icon yet -->
-                <span class="bg-primary rounded-circle p-1"><i class="bi bi-hand-thumbs-up-fill text-white"></i></span>
-                <span class="fw-lighter p-1">15</span>
+        <!-- card: start -->
+        <div class="card card-body mt-3">
+            <div class="d-flex flex-row justify-content-between">
+                <!-- card: user placeholder img, name and time of posted -->
+                <div class="d-flex flex-row align-items-center">
+                    <button class="btn border-0 p-0">
+                        <img class="rounded-circle thumbnail" src="media/profile-placeholder.png"
+                             alt="Profile image">
+                    </button>
+                    <div class="col flex-column align-items-center px-2">
+                        <h5 class="card-title">Jane Doe</h5>
+                        <p class="fw-lighter m-0">5h</p>
+                    </div>
+                </div>
+
+                <!-- card: menu and close -->
+                <div class="d-flex flex-row justify-content-end">
+                    <h4 class="align-top px-3"><i class="bi bi-three-dots"></i></h4>
+                    <h4 class="align-top"><i class="bi bi-x-lg"></i></h4>
+                </div>
             </div>
-            <div class="flex-column align-items-center text-center">
-                <p class="fw-lighter">18 views</p>
+
+            <!-- card: post content -->
+            <div class="d-flex flex-column">
+                <p class="mt-3 card-text">Some description of what Jane Doe ate this weekend.</p>
+                <img class="rounded float-md-start" src="media/feed-food.jpg" alt="placeholder">
+                <!--  <a href="index.html" class="btn btn-primary my-2">Jane Doe's profile page</a> -->
+            </div>
+
+            <!-- card: number of likes and views -->
+            <div class="d-flex flex-row justify-content-between mt-3">
+                <div class="flex-row text-center">
+                    <!-- haven't found out how to properly center the icon yet -->
+                    <span class="bg-primary rounded-circle p-1"><i
+                            class="bi bi-hand-thumbs-up-fill text-white"></i></span>
+                    <span class="fw-lighter p-1">15</span>
+                </div>
+                <div class="flex-column align-items-center text-center">
+                    <p class="fw-lighter">18 views</p>
+                </div>
+            </div>
+            <!-- END: number of likes and views -->
+
+            <!-- CARD: like, comment or share -->
+            <div class="d-flex flex-row justify-content-around border-top">
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span class="fw-bold px-1">Like</span>
+                </button>
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-chat-square"></i>
+                    <span class="fw-bold px-1">Comment</span>
+                </button>
+                <button class="btn flex-column border-0">
+                    <i class="bi bi-share"></i>
+                    <span class="fw-bold px-1">Share</span>
+                </button>
             </div>
         </div>
+        <!-- END: like, comment or share -->
 
-        <!-- card: like, comment or share -->
-        <div class="d-flex flex-row justify-content-around border-top">
-            <button class="btn flex-column border-0">
-                <i class="bi bi-hand-thumbs-up"></i>
-                <span class="fw-bold px-1">Like</span>
-            </button>
-            <button class="btn flex-column border-0">
-                <i class="bi bi-chat-square"></i>
-                <span class="fw-bold px-1">Comment</span>
-            </button>
-            <button class="btn flex-column border-0">
-                <i class="bi bi-share"></i>
-                <span class="fw-bold px-1">Share</span>
-            </button>
-        </div>
     </div>
-    <!-- card: finished -->
-
 </div>
+
+<script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js.flow"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
